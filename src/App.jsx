@@ -3,9 +3,10 @@ import ClientPagination from "./clientBase";
 import ServerPagination from "./serverBase";
 import FolderStr from "./folderStr/FolderStr";
 import "./App.css";
+import Progressbar from "./progressBar";
 
 function App() {
-  const [paginationMethod, setPaginationMethod] = useState(true);
+  // const [paginationMethod, setPaginationMethod] = useState(true);
 
   return (
     <>
@@ -16,7 +17,8 @@ function App() {
       </div>
       {paginationMethod ? <ClientPagination /> : <ServerPagination />} */}
 
-      <FolderStr />
+      {/* <FolderStr /> */}
+      <Progressbar />
     </>
   );
 }

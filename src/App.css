@@ -52,6 +52,39 @@
   font-size: 2rem;
 }
 
-.active{
+.active {
   color: white;
+}
+
+.progress {
+  position: relative;
+  border: 2px solid red;
+  width: 80vw;
+  height: 50px;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.progress-child {
+  height: 100%;
+  border-radius: 2rem;
+  background-color: aquamarine;
+  transition: all 0.3s ease;
+}
+
+.progress-percentage-span {
+  font-size: 2rem;
+  color: red;
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.success-indicator {
+  font-size: 1rem;
+  text-align: center;
+  position: relative;
+  margin-top: 1rem;
 }
