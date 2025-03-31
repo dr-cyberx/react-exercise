@@ -7,6 +7,7 @@ const ProgressBar = ({ percentage, onComplete }) => {
       onComplete();
     }
   }, [percentage]);
+
   return (
     <div className="progress">
       <div className="progress-child" style={{ width: `${percentage}%` }} />

@@ -1,9 +1,10 @@
-import { useState } from "react";
+// import { useState } from "react";
 import ClientPagination from "./clientBase";
 import ServerPagination from "./serverBase";
 import FolderStr from "./folderStr/FolderStr";
-import "./App.css";
 import Progressbar from "./progressBar";
+import SearchBar from "./SearchBar";
+// import "./App.css";
 
 function App() {
   // const [paginationMethod, setPaginationMethod] = useState(true);
@@ -18,7 +19,8 @@ function App() {
       {paginationMethod ? <ClientPagination /> : <ServerPagination />} */}
 
       {/* <FolderStr /> */}
-      <Progressbar />
+      {/* <Progressbar /> */}
+      <SearchBar />
     </>
   );
 }
